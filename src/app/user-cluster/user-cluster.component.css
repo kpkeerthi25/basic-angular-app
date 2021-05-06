@@ -1,0 +1,40 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.odd {
+  color: blue;
+}
+
+.row {
+  display: flex;
+}
+
+.row > div {
+  flex: 1;
+  background: lightgrey;
+  border: 1px solid grey;
+}
+.col {
+  margin: 3;
+  display: table-cell;
+  border: 1px solid;
+  width: 120px;
+  height: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+#heading {
+  
+  font-weight: bold;
+  font-size: 20px;
+
+}
