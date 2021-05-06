@@ -9,15 +9,16 @@
       <input class="form-control" (input)="onUpdatePassword($event)" size="5" type="text" />
     </div>
     <div class="d-flex justify-content-around">
-      <button class="btn btn-success" (click)="popupModel()">Submit</button>
+      <button class="btn btn-success" (click)="createUser()">Submit</button>
 
     </div>
   </form>
   <div id="submit-modal">
     <p>username = {{userName}}</p>
     <p>password = {{password}}</p>
+    <p>user add successfully</p>
     <div class="d-flex justify-content-around">
-      <button class="btn" id="submit-modal-button" (click)="createUser()">OK</button>
+      <button class="btn" id="submit-modal-button" (click)="routeToUserPage()">OK</button>
 
     </div>
 

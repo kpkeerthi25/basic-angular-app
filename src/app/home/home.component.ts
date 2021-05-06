@@ -26,11 +26,11 @@ export class HomeComponent implements OnInit {
 
   createUser() {
     this.userService.addUser(new User(this.userName, this.password));
-    console.log(this.userService.userData);
-    this.router.navigate(['user']);
+    document.getElementById('submit-modal').style.visibility = 'visible';
   }
 
-  popupModel() {
-    document.getElementById('submit-modal').style.visibility = 'visible';
+  routeToUserPage() {
+    document.getElementById('submit-modal').style.visibility = 'hidden';
+    this.router.navigate(['user']);
   }
 }
