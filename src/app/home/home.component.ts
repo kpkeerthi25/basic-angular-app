@@ -29,4 +29,8 @@ export class HomeComponent implements OnInit {
     console.log(this.userService.userData);
     this.router.navigate(['user']);
   }
+
+  popupModel() {
+    document.getElementById('submit-modal').style.visibility = 'visible';
+  }
 }

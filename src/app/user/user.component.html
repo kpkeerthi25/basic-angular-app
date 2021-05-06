@@ -1,17 +1,17 @@
 <div class="row">
-    <div class="col-md-3" *ngIf="!editFlag">
+    <div class="col-sm-4" *ngIf="!editFlag">
 
         <p>{{element.userName}}
         </p>
     </div>
-    <div class="col-md-3" *ngIf="editFlag">
+    <div class="col-sm-4" *ngIf="editFlag">
         <input label="name" type="text" (input)="onUpdateUserName($event)" />
     </div>
 
-    <div class="col-md-3">
+    <div class="col-sm-4">
         <p>{{element.password}}</p>
     </div>
-    <div class="col-md-3 button-group" id="button-group">
+    <div class="col-sm-4 button-group" id="button-group">
         <button *ngIf="!editFlag" class="btn btn-primary" (click)="editUserName()">edit</button>
         <button *ngIf="editFlag" class="btn btn-success" (click)="onNameChange()">OK</button>
         <button class="btn btn-danger" (click)="deleteUser()">delete</button>

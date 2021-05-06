@@ -1,3 +1,37 @@
 .container-fluid {
-  margin-top: 20px;
+  position: absolute;
+  top: 25%;
+  margin: 0px 100px;
+  width: 75%;
+  font-size: 25px;
+}
+
+#submit-modal {
+  font-size: 16px;
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+  background: #f2f2e4;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  display: block;
+  visibility: hidden;
+}
+
+input {
+  height: 50px;
+}
+
+#submit-modal-button {
+  display: inline-block;
+  margin: 10px;
+  color: green;
+  width: 50px;
+  border: 1px solid;
 }
